@@ -43,7 +43,8 @@ body {
 
 /* Carousel */
 .carousel {
-    padding-top: 80px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 /* First Text Quote */
