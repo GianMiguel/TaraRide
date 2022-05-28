@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navigation */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar, .footer {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.navbar .container-fluid {
+    margin-right: 50px;
+}
+
+
+.navbar ul a, .footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul a:hover, .footer ul a:hover {
+    color: rgb(52, 216, 30);
+    border-bottom: 2px solid rgb(250, 154, 9);    
+}
+
+.navbar li:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand img {
+    width: 120px;
+    margin-left: 50px;
+}
+
+/* Carousel */
+.carousel {
+    padding-top: 80px;
+}
+
+/* First Text Quote */
+.quote {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(17, 17, 17);
+}
+
+.quote img {
+    width: 400px;
+}
+
+/* Destinations Card */
+h3, p {
+    text-transform: uppercase;
+    
+}        
+.destination .card {
+    width: 24rem;
+}
+
+.quote, .destination, .videoquote, .grid {
+    margin-top: 30vh;
+}
+
+.contacts {
+    margin-top: 50vh;
+    padding-top: 100px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+}
+
+.card img {
+    filter: brightness(60%);
+}
+
+.card:hover img {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+
+/* Video with Quotes */
+.videoquote {
+    position: relative;
+}
+
+video {
+    width: 200%;
+}
+
+.textblock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Inspirations Grid */
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    height: 60vh;
+    width: 50vw;
+    position: relative;
+}
+
+.grid img {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5 ease;
+    backface-visibility: hidden;
+}
+
+.imgtext {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.imgtext a {
+    text-decoration: none;
+    color: #000;
+}
+
+.culture {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.culture > .imgtext {
+    top: 4%;
+    left: 33%;
+    font-size: 60px;
+}
+
+.culture:hover img {
+    box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
+    opacity: 0.3;
+}
+
+.culture:hover .imgtext {
+    opacity: 1;
+}
+
+.nature {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;   
+}
+
+.nature > .imgtext {
+    bottom: 55%;
+    left: 84%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -20px;
+    font-size: 45px;
+}
+
+.nature:hover img {
+    box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
+    opacity: 0.3;
+}
+
+.nature:hover .imgtext {
+    opacity: 1;
+}
+
+.adventure {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.adventure > .imgtext {
+    top: 17%;
+    left: 15%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -20px;
+    font-size: 45px;
+}
+
+.adventure:hover img {
+    box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
+    opacity: 0.3;
+}
+
+.adventure:hover .imgtext {
+    opacity: 1;
+}
+
+.sea {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+.sea > .imgtext {
+    top: 108%;
+    left: 68%;
+    font-size: 60px;
+}
+
+.sea:hover img {
+    box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
+    opacity: 0.3;
+}
+
+.sea:hover .imgtext {
+    opacity: 1;
+}
+
+.food {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.food > .imgtext {
+    top: 60%;
+    left: 50%;
+    font-size: 45px;
+}
+
+.food:hover img {
+    box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
+    opacity: 0.3;
+}
+
+.food:hover .imgtext {
+    opacity: 1;
+}
+
+/* Contact us */
+.maps {
+    position: relative; 
+}
+
+.formcontainer {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 25rem;
+}
+
+form .form-control {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    margin-bottom: 10px; 
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* .btn, .form-control {
+    height: 55px; 
+} */
+
+
+/* Footer Start */
+.footer {
+    padding: 30px 0;
+    margin-top: 10vh;
+}
+
+.footer ul, .social {
+    text-align: center;
+}
+
+.footer li {
+    padding: 0 12px;
+}
+
+/* .footer ul a {
+    opacity: .8;
+    color:inherit;
+    text-decoration: none;
+} */
+
+/* .footer ul a:hover {
+    opacity: 1;
+    border-bottom: 2px solid rgb(52, 41, 211);
+} */
+
+/* .social {
+    text-align: center;
+} */
+
+.social i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: white;
+}
+
+.social .bi-facebook:hover {
+    color: #1887f2;
+}
+
+.social .bi-instagram:hover {
+    color: #c32aa3;
+}
+
+.social .bi-twitter:hover {
+    color: #1da1f2;
+}
+
+.social .bi-github:hover {
+    color: #ff2052;
+}
+
+.social .bi-google:hover {
+    color: #4285f4;
+}
+
+.madeby {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0;
+}

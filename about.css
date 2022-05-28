@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    /* height: 3000px;
+  background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%); */
+  background-image: url(images/riderr.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navigation */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar, .footer {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.navbar .container-fluid {
+    margin-right: 50px;
+}
+
+
+.navbar ul a, .footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul a:hover, .footer ul a:hover {
+    color: rgb(52, 216, 30);
+    border-bottom: 2px solid rgb(250, 154, 9);    
+}
+
+.navbar li:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand img {
+    width: 120px;
+    margin-left: 50px;
+}
+
+/* about us text */
+.fronttext {
+    font-size: 100px; 
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 30px;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(248, 248, 248);
+    text-shadow: 0 2px 4px black;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 6px solid rgb(248, 248, 248);
+}
+
+
+/* Information Part */
+.aboutcontainer {
+    margin-top: 60vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.intro {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.caption {
+    margin-top: 40px;
+}
+.text {
+    width: 580px;
+    text-align: justify;
+}
+
+.firstimage img {
+    float: right;
+    width: 580px;
+    margin-top: 50px;
+}
+
+.secondcontainer {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    margin-top: 50px;
+}
+
+.secondimage img {
+    width: 50%;
+    float: left;
+}
+
+.text2 {
+    text-align: justify;
+    width: 50%;
+    float: right;
+    padding-left: 30px;
+}
+
+
+/* Recommendations */
+.accordion {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}
+
+.accordion h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.accordion-header button {
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.accordion-header img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.accordion-header .culture {
+    background: rgb(240,177,17);
+    background: linear-gradient(90deg, rgba(240,177,17,0) 0%, rgba(203,8,246,1) 100%);
+}
+
+.accordion-header .nature {
+    background: rgb(240,177,17);
+    background: linear-gradient(90deg, rgba(240,177,17,0) 0%, rgba(25,255,39,1) 100%);
+}
+
+.accordion-header .food {
+    background: rgb(240,177,17);
+    background: linear-gradient(90deg, rgba(240,177,17,0) 0%, rgba(255,65,25,1) 100%);
+}
+
+.accordion-header .sea {
+    background: rgb(240,177,17);
+    background: linear-gradient(90deg, rgba(240,177,17,0) 0%, rgba(25,84,255,1) 100%);
+}
+.accordion-header .adventure {
+    background: rgb(240,177,17);
+    background: linear-gradient(90deg, rgba(240,177,17,0) 0%, rgba(255,179,25,1) 100%);
+}
+
+
+/* Contact us */
+.contacts {
+    margin-top: 30vh;
+    padding-top: 100px;
+}
+.maps {
+    position: relative; 
+}
+
+.formcontainer {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 25rem;
+}
+
+form .form-control {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    margin-bottom: 10px; 
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+
+
+/* Footer Start */
+.footer {
+    padding: 30px 0;
+    margin-top: 10vh;
+}
+
+.footer ul, .social {
+    text-align: center;
+}
+
+.footer li {
+    padding: 0 12px;
+}
+
+/* .footer ul a {
+    opacity: .8;
+    color:inherit;
+    text-decoration: none;
+} */
+
+/* .footer ul a:hover {
+    opacity: 1;
+    border-bottom: 2px solid rgb(52, 41, 211);
+} */
+
+/* .social {
+    text-align: center;
+} */
+
+.social i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: white;
+}
+
+.social .bi-facebook:hover {
+    color: #1887f2;
+}
+
+.social .bi-instagram:hover {
+    color: #c32aa3;
+}
+
+.social .bi-twitter:hover {
+    color: #1da1f2;
+}
+
+.social .bi-github:hover {
+    color: #ff2052;
+}
+
+.social .bi-google:hover {
+    color: #4285f4;
+}
+
+.madeby {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0;
+}

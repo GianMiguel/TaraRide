@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tara Rides</title>
+    <title>Tara Ride</title>
 
     <link rel="icon" href="images/icon3.png">
-
-    <style>
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        body {
-            margin: 0;
-        }
-
-    
-    </style>
+    <link rel="stylesheet" href="index.css">
 
             <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,40 +18,38 @@
 </head>
 <body>
     
-    <!-- Navigation Bar -->
-    <nav class="navbar p-3 fw-semibold">
+    <!-- Navigation Bar -->   
+    <nav class="navbar sticky-top ps-3 fw-semibold">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">TARA RIDES</a>
+            <a href="index.html" class="navbar-brand"><img src="/images/tara ride logo/tara1.3.png" alt=""></a>
 
             <ul class="nav justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Home</a></li>
 
-                <li class="nav-item dropdown" id="destination">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destinationdropdown">Destination</a>
-
-                        <ul class="dropdown-menu" aria-labelledby="destinationdropdown">
+                <li class="nav-item dropdown">
+                    <a href="/destinations.html" class="nav-link dropdown-toggle"  aria-expanded="false" id="destinationdropdown"> Destination</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="destinationdropdown">
                             <li><h4 class="dropdown-header">Where to go?</h4></li> <hr>
-                            <li><a href="" class="dropdown-item">Short Rides</a></li>
-                            <li><a href="" class="dropdown-item">Long Rides</a></li>
-                            <li><a href="" class="dropdown-item">Longer Rides</a></li>
+                            <li><a href="/destinations.html#shortride" class="dropdown-item">Short Rides</a></li>
+                            <li><a href="/destinations.html#longride" class="dropdown-item">Long Rides</a></li>
+                            <li><a href="/destinations.html#longerride" class="dropdown-item">Longer Rides</a></li>
                         </ul>
                 </li>
                 
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="inspirationdropdown">Inspiration</a>
-
-                        <ul class="dropdown-menu" aria-labelledby="inspirationdropdown">
+                    <a href="/inspirations.html" class="nav-link dropdown-toggle" aria-expanded="false" id="inspirationdropdown">Inspiration</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="inspirationdropdown">
                             <li><h4 class="dropdown-header">What to do?</h4></li> <hr>
-                            <li><a href="" class="dropdown-item">Sea</a></li>
-                            <li><a href="" class="dropdown-item">Nature</a></li>
-                            <li><a href="" class="dropdown-item">Adventure</a></li>
-                            <li><a href="" class="dropdown-item">Food</a></li>
-                            <li><a href="" class="dropdown-item">Culture</a></li>
+                            <li><a href="/inspirations.html#culturehead" class="dropdown-item">Culture</a></li>
+                            <li><a href="/inspirations.html#naturehead" class="dropdown-item">Nature</a></li>
+                            <li><a href="/inspirations.html#foodhead" class="dropdown-item">Food</a></li>
+                            <li><a href="/inspirations.html#seahead" class="dropdown-item">Sea</a></li>
+                            <li><a href="/inspirations.html#adventurehead" class="dropdown-item">Adventure</a></li>
                         </ul>
                 </li>
 
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
             </ul>    
         </div>
     </nav>
@@ -79,24 +67,20 @@
             
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="images/bicol.jpg" alt="baguio1" class="d-block" width="100%">
-                </div>
+                    <img src="images/bicol.jpg" alt="baguio1" class="d-block" width="100%"></div>
 
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="images/bataan2.jpg" alt="baguio1" class="d-block" width="100%">
-                </div>
+                    <img src="images/bataan2.jpg" alt="baguio1" class="d-block" width="100%"></div>
 
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="images/ilocos.jpg" alt="baguio1" class="d-block" width="100%">
-                </div>
+                    <img src="images/ilocos.jpg" alt="baguio1" class="d-block" width="100%"></div>
 
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="images/la union.jpg" alt="baguio1" class="d-block" width="100%">
-                </div>
+                    <img src="images/la union.jpg" alt="baguio1" class="d-block" width="100%"></div>
 
                 <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="images/banaue.jpg" alt="baguio1" class="d-block" width="100%">
-                </div>
+                    <img src="images/banaue.jpg" alt="baguio1" class="d-block" width="100%"></div>
+
                 <!-- button -->
                 <a class="carousel-control-prev" href="#gallery" data-bs-target="#gallery" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -111,10 +95,161 @@
         </div>
     </div>
 
+    <!-- First Text Part -->
+    <div class="container-fluid">
+        <div class="quote">
+            <div class="row align-items-center">
+               <div class="col-md-4 offset-2"> No plans, No maps <hr> No gps, No rules </div>
+               <div class="col-md-4 offset-1"> <img src="images/justride2-removebg-preview.png" alt="justride" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+        
+
+    <!-- Destinations Part Cards -->
+
+    <div class="destination" id="d1">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 ms-5">
+                    <div class="card text-center">
+                        <img src="images/rider5.jpeg" alt="shortrideimg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Short Rides</h3>
+                            <p>(Day Tour)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ms-5">
+                    <div class="card text-center">
+                        <img src="images/rider3.jpeg" alt="shortrideimg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Long Rides</h3>
+                            <p>(Atleast 2-3 days)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ms-5">
+                    <div class="card text-center">
+                        <img src="images/rider7.jpg" alt="shortrideimg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Longer Rides</h3>
+                            <p>(at least 5 days)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Second Text Part -->
+    <div class="container-fluid">
+        <div class="videoquote">
+            <div class="align-items-center">
+                <div class="col-md-4 offset-2"> <video autoplay muted loop src="/videos/production ID_5052735.mp4" type="video/mp4"></video></div>
+                <div class="textblock">Never ride faster than <br> your guardian angel can fly</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Inspirations Part -->
+    <div class="inspiration">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <div class="grid">
+                    <div class="sea">
+                        <img src="images/zambales1.jpg" alt="sea" width="100%">
+                        <div class="imgtext">
+                            <div class="texthover"><a href="">Sea</a></div>
+                        </div>
+                    </div>
+
+                    <div class="nature">
+                        <img src="images/mayon.jpg" alt="nature" height="100%" style="float: right;">
+                        <div class="imgtext">
+                            <div class="texthover"><a href="">Nature</a></div>
+                        </div>
+                        <!-- <img src="images/tagaytay3.jpg" alt="" height="560px"> -->
+                    </div>
+
+                    <div class="adventure">
+                        <img src="images/espadang bato2.jpg" alt="bato" height="100%">
+                        <div class="imgtext">
+                            <div class="texthover"><a href="">Adventure</a></div>
+                        </div>
+                    </div>
+
+                    <div class="food">
+                        <img src="images/food2.jpg" alt="food" width="100%">
+                        <div class="imgtext">
+                            <div class="texthover"><a href="">Food</a></div>
+                        </div>
+                    </div>
+
+                    <div class="culture">
+                        <img src="images/fort3.jpg" alt="culture" width="100%">
+                        <div class="imgtext">
+                            <div class="texthover"><a href="">Culture</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts -->
+    <div class="contacts" id="contactus">
+        <div class="container-fluid">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1218772.9186503666!2d120.493967083599!3d14.575300479728215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1653395968978!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="formcontainer"> 
+                <h2>Contact Us</h2> <hr>
+
+                <form>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Write your name here...">
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Let us know where to contact you...">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="What would you like to tell us?"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+
+        </div>   
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="">Home</a></li>
+                <li class="list-inline-item"><a href="">Destinations</a></li>
+                <li class="list-inline-item"><a href="">Inspirations</a></li>
+                <li class="list-inline-item"><a href="">About</a></li>
+                <li class="list-inline-item"><a href="">Contact Us</a></li>
+            </ul>
+            
+            <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-google"></i></a>
+            </div>
+
+            <p class="madeby">Made by Gian Miguel © 2022</p>
+        </footer>
+    </div>
 
 
     <!-- <video style="width: 100%; height: 100vh;" autoplay muted loop>
-        <source src="production ID_4225312.mp4" type="video/mp4"/>
+        <source src="/videos/production ID_4225312.mp4" type="video/mp4"/>
     </video> -->
 
 
