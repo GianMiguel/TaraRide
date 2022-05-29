@@ -13,8 +13,7 @@ body {
 }
 
 .navbar, .footer {
-    background-color: #0f0f0f;
-    color: white;
+    background-color: #0d2420;
 }
 
 .navbar .container-fluid {
@@ -28,12 +27,10 @@ body {
 }
 
 .navbar ul a:hover, .footer ul a:hover {
-    color: rgb(52, 216, 30);
-    border-bottom: 2px solid rgb(250, 154, 9);    
-}
-
-.navbar li:hover {
-    color: rgb(255, 255, 255);
+    color: #3ed42a;
+    border-bottom: 2px solid #ff6a00;
+    /* color: #4d7701; */
+    /* border-bottom: 2px solid rgb(250, 154, 9);*/
 }
 
 .navbar-brand img {
@@ -51,18 +48,19 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 40px;
-    color: rgb(17, 17, 17);
+    color: #0d2420;
 }
 
 .quote img {
     width: 400px;
 }
 
+
 /* Destinations Card */
 h3, p {
     text-transform: uppercase;
-    
 }        
+
 .destination .card {
     width: 24rem;
 }
@@ -71,14 +69,27 @@ h3, p {
     margin-top: 30vh;
 }
 
-.contacts {
-    margin-top: 50vh;
-    padding-top: 100px;
+.card-body {
+    background-color: #0d2420;
+    padding-top: 10px;
 }
 
 .card:hover {
     box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.5);
     cursor: pointer;
+}
+
+.card a {
+    color: #f4f0f4;
+    text-decoration: none;
+}
+
+.card a:hover h3{
+    color: #3ed42a;
+}
+
+.card a:hover p{
+    color: #ff6a00;
 }
 
 .card img {
@@ -125,9 +136,7 @@ video {
 }
 
 .grid img {
-    border: 2px solid #ddd;
     border-radius: 10px;
-    opacity: 1;
     display: block;
     transition: .5 ease;
     backface-visibility: hidden;
@@ -145,7 +154,13 @@ video {
 
 .imgtext a {
     text-decoration: none;
-    color: #000;
+    color: white;
+}
+
+.imgtext a:hover  {
+    text-decoration: none;
+    color: #ff6a00;
+    text-shadow: 1px 1px 4px rgba(25, 25, 25, 0.5)
 }
 
 .culture {
@@ -161,7 +176,7 @@ video {
 
 .culture:hover img {
     box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
-    opacity: 0.3;
+    filter: brightness(60%);
 }
 
 .culture:hover .imgtext {
@@ -184,7 +199,7 @@ video {
 
 .nature:hover img {
     box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
-    opacity: 0.3;
+    filter: brightness(60%);
 }
 
 .nature:hover .imgtext {
@@ -207,7 +222,7 @@ video {
 
 .adventure:hover img {
     box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
-    opacity: 0.3;
+    filter: brightness(60%);
 }
 
 .adventure:hover .imgtext {
@@ -227,7 +242,7 @@ video {
 
 .sea:hover img {
     box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
-    opacity: 0.3;
+    filter: brightness(60%);
 }
 
 .sea:hover .imgtext {
@@ -247,7 +262,7 @@ video {
 
 .food:hover img {
     box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
-    opacity: 0.3;
+    filter: brightness(60%);
 }
 
 .food:hover .imgtext {
@@ -255,32 +270,43 @@ video {
 }
 
 /* Contact us */
+.contacts {
+    margin-top: 50vh;
+    padding-top: 100px;
+}
+
 .maps {
     position: relative; 
 }
 
 .formcontainer {
-    background-color: #fcfcfc;
+    background-color: #f4f0f4;
     border-radius: 5px;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
-    width: 35rem;
+    width: 30rem;
     height: 25rem;
 }
 
 form .form-control {
     border: none;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 2px solid #0d2420;
     border-radius: 0;
     margin-bottom: 10px; 
+    background-color: #f4f0f4;
 }
 
 form textarea {
     resize: none;
     height: 150px;
+}
+
+form .btn {
+    background-color: #111c1a;
+    color: #f4f0f4;
 }
 
 /* .btn, .form-control {
@@ -302,25 +328,10 @@ form textarea {
     padding: 0 12px;
 }
 
-/* .footer ul a {
-    opacity: .8;
-    color:inherit;
-    text-decoration: none;
-} */
-
-/* .footer ul a:hover {
-    opacity: 1;
-    border-bottom: 2px solid rgb(52, 41, 211);
-} */
-
-/* .social {
-    text-align: center;
-} */
-
 .social i {
     font-size: 30px;
     margin: 0 10px;
-    color: white;
+    color: #f4f0f4;
 }
 
 .social .bi-facebook:hover {
@@ -348,4 +359,5 @@ form textarea {
     text-align: center;
     font-size: 12px;
     margin-bottom: 0;
+    color: #f4f0f4;
 }

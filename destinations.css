@@ -13,7 +13,7 @@ body {
 }
 
 .navbar, .footer {
-    background-color: #0f0f0f;
+    background-color: #0d2420;
     color: white;
 }
 
@@ -29,8 +29,8 @@ body {
 }
 
 .navbar ul a:hover, .footer ul a:hover {
-    color: rgb(52, 216, 30);
-    border-bottom: 2px solid rgb(250, 154, 9);    
+    color: #3ed42a;
+    border-bottom: 2px solid #ff6a00;  
 }
 
 .navbar li:hover {
@@ -56,11 +56,26 @@ body {
     width: 24rem;
     position: absolute;
     top: 60%;
+    background-color: #0d2420;
+    padding-top: 10px;
 }
+
+.destination .card a {
+    color: #f4f0f4;
+    text-decoration: none;
+}
+
+.destination .card a:hover h3{
+    color: #3ed42a;
+}
+
+.destination .card a:hover p{
+    color: #ff6a00;
+}
+
 
 .card:hover {
     box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.5);
-    cursor: pointer;
 }
 
 .card img {
@@ -69,8 +84,19 @@ body {
 
 .card:hover img {
     filter: brightness(100%);
-    cursor: pointer;
 }
+
+/* card gallery */
+.card a {
+    color: #0d2420;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #0d2420;
+}
+
+/* Margin spacing */
 .shortridecontainer, .shortplaces, .longridecontainer, .longplaces, .longerridecontainer, .longerplaces {
     margin-top: 35vh;
 }
@@ -84,6 +110,7 @@ body {
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    color: #0d2420;
 }
 
 .shortride {
@@ -95,7 +122,7 @@ body {
     line-height: 1;
     text-align: right;
     padding-right: 50px;
-    border-right: 3px solid black;
+    border-right: 3px solid #ff6a00;
 }
 
 .shortridecaption {
@@ -113,6 +140,7 @@ body {
     font-size: 20px;
     padding-left: 80px;
     padding-top: 20px;
+    color: #ff6a00;
 }
 
 .shortinfo{
@@ -121,6 +149,7 @@ body {
     text-transform: lowercase;
     padding-left: 80px;
 }
+
 
 
 /* Long Ride Text */
@@ -132,6 +161,7 @@ body {
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    color: #0d2420;
 }
 
 .longride {
@@ -142,7 +172,7 @@ body {
     font-weight: 900;
     line-height: .9;
     padding-left: 50px;
-    border-left: 3px solid black;
+    border-left: 3px solid #ff6a00;
 }
 
 .longridecaption {
@@ -163,6 +193,7 @@ body {
     padding-right: 80px;
     padding-top: 20px;
     text-align: right;
+    color: #ff6a00;
 }
 
 .longinfo {
@@ -183,6 +214,7 @@ body {
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    color: #0d2420;
 }
 
 .longerride {
@@ -194,7 +226,7 @@ body {
     line-height: 1;
     text-align: right;
     padding-right: 50px;
-    border-right: 3px solid black;
+    border-right: 3px solid #ff6a00;
 }
 
 .longerridecaption {
@@ -213,6 +245,7 @@ body {
     font-size: 20px;
     padding-left: 40px;
     padding-top: 20px;
+    color: #ff6a00;
 }
 
 .longerinfo {

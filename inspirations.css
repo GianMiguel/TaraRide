@@ -16,7 +16,7 @@ body {
 }
 
 .navbar, .footer {
-    background-color: #0f0f0f;
+    background-color: #0d2420;
     color: white;
 }
 
@@ -31,8 +31,10 @@ body {
 }
 
 .navbar ul a:hover, .footer ul a:hover {
-    color: rgb(52, 216, 30);
-    border-bottom: 2px solid rgb(250, 154, 9);    
+    color: #3ed42a;
+    border-bottom: 2px solid #ff6a00;
+    /* color: #4d7701; */
+    /* border-bottom: 2px solid rgb(250, 154, 9);*/    
 }
 
 .navbar li:hover {
@@ -121,7 +123,7 @@ body {
 }
 
 .culture .imgtext a:hover {
-    color: aqua;
+    color: #ff6a00;
     text-shadow: 2px 2px 2px rgba(25, 25, 25, 0.5);
 }
 
@@ -150,7 +152,7 @@ body {
 }
 
 .nature .imgtext a:hover {
-    color: aqua;
+    color: #ff6a00;
     text-shadow: 2px 2px 2px rgba(25, 25, 25, 0.5);
 }
 
@@ -179,7 +181,7 @@ body {
 }
 
 .adventure .imgtext a:hover {
-    color: aqua;
+    color: #ff6a00;
     text-shadow: 2px 2px 2px rgba(25, 25, 25, 0.5);
 }
 
@@ -205,7 +207,7 @@ body {
 }
 
 .sea .imgtext a:hover {
-    color: aqua;
+    color: #ff6a00;
     text-shadow: 2px 2px 2px rgba(25, 25, 25, 0.5);
 }
 
@@ -230,7 +232,7 @@ body {
     opacity: 1;
 }
 .food .imgtext a:hover {
-    color: aqua;
+    color: #ff6a00;
     text-shadow: 2px 2px 2px rgba(25, 25, 25, 0.5);
 }
 
@@ -242,11 +244,13 @@ body {
 /* Culture Head + .seahead*/
 .culturetextbox, .seahead {
     margin-left: 10vw;
+    color: #0d2420;
 }
 
 .culturetitle, .seatitle {
     font-size: 160px;
     font-weight: 900;
+    
 }
 
 .culturequote, .seaquote {
@@ -254,6 +258,7 @@ body {
     font-weight: 600;
     margin-top: -50px;
     margin-left: 10px;
+    color: #ff6a00;
 }
 
 .culturetext, .seatext {
@@ -262,7 +267,7 @@ body {
 
 
 /* Culture Body */
-.culturegrid {
+.culturegrid, .adventuregrid {
     margin-top: 20vh;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -274,14 +279,14 @@ body {
     gap: 20px;
 }
 
-.culturegrid img {
+.culturegrid img, .adventuregrid img {
     max-width: 100%;
     height: auto;
     /* opacity: .7; */
     filter: brightness(60%);
 }
 
-.culturegrid img:hover {
+.culturegrid img:hover, .adventuregrid img:hover {
     /* opacity: 1; */
     filter: brightness(100%);
     box-shadow: 2px 2px 4px rgba(25, 25, 25, 0.5);
@@ -324,13 +329,14 @@ body {
     grid-column: 3/5;
     text-align: right;
     line-height: 1.5;
+    color: #0d2420;
 }
 
-.culturenames ul {
+.culturenames ul, .adventurenames ul{
     list-style-type: none;
 }
 
-.culturenames ul a{
+.culturenames ul a, .adventurenames ul a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -341,7 +347,7 @@ body {
 
 .culturenames ul a:hover {
     opacity: 1;
-    border-right: 3px solid black;
+    border-right: 3px solid #ff6a00;
     /* border-bottom: 2px solid black; */
 }
 
@@ -349,6 +355,7 @@ body {
 /* Nature Head + Adventure Head*/
 .naturehead, .adventurehead {
     text-align: right;
+    color: #0d2420;
 }
 
 .naturetextbox, .adventuretextbox {
@@ -365,6 +372,7 @@ body {
     font-weight: 600;
     margin-top: -40px;
     line-height: 1;
+    color: #ff6a00;
 }
 
 .naturetext, .adventuretext {
@@ -419,12 +427,14 @@ body {
     grid-row: 3/4;
 }
 
+/* nature name lists */
 .naturenames {
     grid-row: 1/2;
     grid-column: 1/2;
     text-align: right;
     display: flex;
     align-items: center;
+    color: #0d2420;
 }
 
 .naturenames ul {
@@ -442,13 +452,14 @@ body {
 
 .naturenames ul a:hover {
     opacity: 1;
-    border-right: 3px solid black;
+    border-right: 3px solid #ff6a00;
     /* border-bottom: 2px solid black; */
 }
 
 /* Food Head */
 .foodhead {
     text-align: center;
+    color: #0d2420;
 }
 
 .foodtitle {
@@ -460,6 +471,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     margin-top: -50px;
+    color: #ff6a00;
 }
 
 /* Food Body */
@@ -555,21 +567,91 @@ body {
     grid-row: 3/4;
 }
 
+/* Sea Name Lists */
+.seanames {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    color: #0d2420;
+}
+
+.seanames ul {
+    list-style-type: none;
+}
+
+.seanames ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: inherit;
+    opacity: .8;
+    padding-left: 5px;
+}
+
+.seanames ul a:hover {
+    opacity: 1;
+    border-left: 3px solid #ff6a00;
+    /* border-bottom: 2px solid black; */
+}
+
 
 /* Adventure Head */
-
 .adventurequote {
     font-size: 35px;
 }
 
 
 /* Adventure Body */
+.adventurenames {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    line-height: 1.5;
+    color: #0d2420;
+}
+
+.adventurenames ul a {
+    padding-left: 5px;
+    margin-left: 0;
+}
+
+.adventurenames ul a:hover {
+    opacity: 1;
+    border-left: 3px solid #ff6a00;
+}
+
+.rock1 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.masungi2 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.pagsanjan {
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.mayon1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.mayon2 {
+    grid-column: 2/4;
+    grid-row: 4/6;
+    margin-top: 120px;
+}
+
 
 
 /* Footer Start */
 .footer {
     padding: 30px 0;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 .footer ul, .social {
