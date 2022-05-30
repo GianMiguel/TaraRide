@@ -357,11 +357,12 @@ form .btn {
 @media screen and (max-width: 420px) {
     .navbar .container-fluid {
         margin-right: 0;
+        justify-content: center;
     }
 
     .navbar-brand img {
         width: 120px;
-        margin-left: 50%;
+        margin-left: 70%;
     }
 
     .quote, .destination, .videoquote, .grid {
@@ -379,7 +380,7 @@ form .btn {
 
     .destination .card {
         width: 20rem;
-        margin-left: 5vw;
+        margin-left: 0;
     }
 
     video {
