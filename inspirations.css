@@ -471,6 +471,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90vh;
+    grid-gap: 10px;
 }
 
 .foodgrid img {
