@@ -29,7 +29,6 @@ body {
     border-bottom: 2px solid #ff6a00;
 }
 
-
 .navbar-brand img {
     width: 120px;
     margin-left: 50px;
@@ -40,7 +39,7 @@ body {
     margin-top: 10px;
 }
 
-/* Margin of Parts */
+/* Margin of Sections */
 .quote, .destination, .videoquote, .grid {
     margin-top: 30vh;
 }
