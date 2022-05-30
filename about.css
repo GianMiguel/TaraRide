@@ -61,6 +61,10 @@ body {
     border-bottom: 6px solid rgb(248, 248, 248);
 }
 
+.frontimage img {
+    display: none;
+}
+
 
 /* Information Part */
 .aboutcontainer {
@@ -85,6 +89,7 @@ body {
 .caption {
     margin-top: 40px;
 }
+
 .text {
     width: 580px;
     text-align: justify;
@@ -173,8 +178,7 @@ body {
 
 /* Contact us */
 .contacts {
-    margin-top: 30vh;
-    padding-top: 100px;
+    margin-top: 20vh;
 }
 
 .maps {
@@ -258,4 +262,70 @@ form .btn {
     text-align: center;
     font-size: 12px;
     margin-bottom: 0;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 420px) {
+    .navbar .container-fluid {
+        margin-right: 0;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        margin-left: 50%;
+    }
+/* about us text */
+    .frontimage img {
+        display: block;
+    }
+
+    .fronttext {
+        display: none;
+    }
+
+/* Information Part */
+    .aboutcontainer {
+        margin-top: 10vh;
+    }
+    
+    .text {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .firstimage img {
+        width: 300px;
+        margin-top: 0;
+    }
+
+
+    .secondcontainer {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .secondimage img {
+        width: 330px;
+        float: none;
+    }
+    
+    .text2 {
+        text-align: justify;
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+
+    /* Contact forms */
+    .contacts {
+        margin-top: 15vh;
+    }
+
+    .formcontainer {
+        width: 15rem;
+        left: 50%;
+    }
 }
