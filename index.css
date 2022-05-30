@@ -39,7 +39,7 @@ body {
     margin-top: 10px;
 }
 
-/* Margin of Sections */
+/* Margin of Section */
 .quote, .destination, .videoquote, .grid {
     margin-top: 30vh;
 }
@@ -205,7 +205,7 @@ video {
 }
 
 .adventure > .imgtext {
-    top: 22%;
+    top: 32%;
     left: 15%;
     writing-mode: vertical-rl;
     text-orientation: upright;

@@ -50,6 +50,10 @@ body {
     position: relative;
 }
 
+.destination {
+    margin-left: 60px;
+}
+
 .destination .card {
     width: 24rem;
     top: -60%;
@@ -95,7 +99,7 @@ body {
 
 /* Margin spacing */
 .shortridecontainer, .shortplaces, .longridecontainer, .longplaces, .longerridecontainer, .longerplaces {
-    margin-top: 35vh;
+    margin-top: 20vh;
 }
 
 /* Short Ride Text */
@@ -331,6 +335,7 @@ body {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: center;
         margin-top: 5vh;
+        margin-left: auto;
     }
 
     .shortride {
